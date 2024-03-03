@@ -1,0 +1,15 @@
+.box {
+  margin-top: 30px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.352);
+  position: relative;
+  width: 900px;
+  height: 550px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 45px;
+  background-color: hsl(354, 58%, 93%, 0.5);
+}
+

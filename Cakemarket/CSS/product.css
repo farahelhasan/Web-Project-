@@ -1,0 +1,30 @@
+.btn-group {
+  margin: auto;
+  padding: 10px;
+  width: 60%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-outline-primary {
+  border-color: #ffb3ba;
+  color: #fc6676;
+}
+
+.card {
+  margin: 20px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 370px;
+  float: left;
+  position: relative;
+  display: flex;
+}
+.card:hover {
+  width: 280px;
+  height: 380px;
+  box-shadow: rgba(0, 0, 0, 0.155) 2px 5px 5px;
+}

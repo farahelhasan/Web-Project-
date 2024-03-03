@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1;
+  font-family: "Poppins";
+}
+.container {
+  background-color: #fbc8cd;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 1px rgb(0, 0, 0, 12%);
+  padding: 45px;
+  margin: 15px 0;
+  width: 950px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 1fr auto auto;
+  grid-template-areas:
+    "image info"
+    "image description"
+    "image rating "
+    "coment coment";
+  grid-gap: 35px;
+}
+
+.box .image {
+  grid-area: image;
+}
+.box .image img {
+  width: 370px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px #00000036;
+}
+
+.box .basic-information {
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.box .basic-information .stars i {
+  color: rgb(255, 238, 0);
+  font-size: 1.2em;
+}
+
+.box .basic-information .stars span {
+  font-size: 20px;
+  color: rgb(36, 36, 36);
+  font-weight: 800;
+}
+.box .basic-information .button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5em;
+}
+.box .basic-information .button-container a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+.card-button,
+.buy-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fc6676;
+  border-radius: 0.5em;
+  cursor: pointer;
+  height: 50px;
+  width: 190px;
+  padding: 10px;
+}
+
+.cart-ion {
+  padding: 10px;
+  color: #fff;
+  width: 41px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 1.42em;
+}
+
+.buy-button {
+  padding: 0.5em 0.8em;
+}
+
+.card-button:hover,
+.buy-button:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.467);
+}
+.card-button,
+.buy-button {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.box .rating {
+  grid-area: rating;
+}
+.rating {
+  padding: 20px;
+  /* border: solid 1px #fc6676; */
+  border-radius: 25px;
+  /* box-shadow: 0 10px 20px #dadada; */
+}
+.rating header {
+  font-size: 22px;
+  font-weight: 500;
+  color: #fbc8cdbe;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.rating .stars-for-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.stars-for-rating i {
+  color: #e6e6e6;
+  font-size: 35px;
+  cursor: pointer;
+  transition: color 0.2 ease;
+}
+.stars-for-rating i.active {
+  color: rgba(255, 238, 0, 0.745);
+}
+.box .description {
+  grid-area: description;
+}
+.box .comment {
+  grid-area: coment;
+  padding: 0;
+}
+.comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  border: solid 1px #f1e6e799;
+  border-radius: 10px;
+  background-color: #f1e6e799;
+}
+.comment .comment-heading {
+  letter-spacing: 1px;
+  margin: 30px 0px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment .comment-heading h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #fbc8cd;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment samp {
+  font-size: 1.3rem;
+  color: #fc6676;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-box-container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  flex-wrap: warp;
+  width: 100%;
+}
+.comment-box {
+  width: 700px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 30px #00000036;
+  background-color: #fff;
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+  float: left;
+}
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
+.name-user {
+  display: flex;
+  flex-direction: column;
+}
+.name-user strong {
+  color: #3d3d3d;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+.name-user span {
+  color: #979797;
+  font-size: 0.8rem;
+}
+.reviews {
+  color: rgb(255, 238, 0);
+}
+.box-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.client-comment p {
+  font-size: 0.9rem;
+  color: #4b4b4b;
+}
+p {
+  line-height: 1.6;
+}

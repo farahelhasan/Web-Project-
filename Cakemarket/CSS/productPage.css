@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.product-type {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  margin-top: 30px;
+  background: #b5d4b63e;
+}
+
+.product-type button {
+  width: 170px;
+  height: 60px;
+  color: #fff;
+  /* border-radius: 1em; */
+
+  margin-left: 0;
+  font-size: 1.3em;
+}
+
+.b1 {
+  background: #ffaf50;
+  border: solid 1px #ffaf50;
+}
+.b2 {
+  background: #fd8b71;
+  border: solid 1px #fd8b71;
+}
+.b3 {
+  background: #ff7380;
+  border: solid 1px #ff7380;
+}
+.b4 {
+  background: #98d3db;
+  border: solid 1px #98d3db;
+}
+.b5 {
+  background: #b5d4b6;
+  border: solid 1px #b5d4b6;
+}
+
+.product-type button:hover {
+  height: 57px;
+  width: 145px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.container {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+
+  /* place-items: center; */
+  margin: 1em;
+  font-family: "Poppins";
+}
+
+.card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 1.2em 1.2em 1.2em 1.2em;
+  width: 250px;
+  height: 390px;
+  position: relative;
+  margin: 20px;
+  float: left;
+}
+.card:hover {
+  height: 395px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.37);
+}
+.content {
+  background: #fff;
+  margin: 1em;
+}
+
+.images img {
+  width: 100%;
+  height: 210px;
+  border-radius: 1.2em 1.2em 0 0;
+}
+
+.review-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.6em;
+}
+
+.stars i {
+  color: rgb(255, 238, 0);
+  font-size: 0.8em;
+}
+
+.stars span,
+.description p {
+  font-size: 0.85em;
+  color: rgb(36, 36, 36);
+}
+
+.name,
+.price {
+  font-size: 1.3em;
+  color: black;
+}
+
+.description {
+  margin: 0.6em 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  margin-top: 0.5em;
+  border-color: #fff;
+}
+.card-button {
+  display: flex;
+  align-items: center;
+  background: #ffb3ba;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  height: 40px;
+  border-color: #fff;
+  color: #fff;
+}
+
+.cart-icon,
+.like-button {
+  width: 41px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 2em;
+  line-height: 1.92em;
+  background: #fc6676;
+  display: flex;
+  align-items: center;
+  border-color: #fff;
+  color: #fff;
+}
+
+.cart-icon,
+.card-button p,
+.like-button {
+  padding: 0.5em 0.8em;
+  border-color: #fff;
+  color: #fff;
+}
+
+.card-button:hover,
+.like-button:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.467);
+  color: #fff;
+}
+.card-button,
+.like-button {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-color: #fff;
+}
+
+.button-container button {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.467);
+}
+.cart-icon,
+.like-button i {
+  color: #fff;
+}
